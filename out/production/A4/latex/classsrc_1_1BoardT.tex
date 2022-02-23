@@ -1,0 +1,94 @@
+\hypertarget{classsrc_1_1BoardT}{}\doxysection{src.\+BoardT Class Reference}
+\label{classsrc_1_1BoardT}\index{src.BoardT@{src.BoardT}}
+
+
+Collaboration diagram for src.\+BoardT\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=145pt]{classsrc_1_1BoardT__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsrc_1_1BoardT_a1fe15d38ff812a7cbe1d3a12e4cd4e04}\label{classsrc_1_1BoardT_a1fe15d38ff812a7cbe1d3a12e4cd4e04}} 
+\mbox{\hyperlink{classsrc_1_1BoardT_a1fe15d38ff812a7cbe1d3a12e4cd4e04}{BoardT}} ()
+\begin{DoxyCompactList}\small\item\em We initialize the board where each tile is of type \mbox{\hyperlink{classsrc_1_1TileT}{TileT}} we initialize a board of size 4 $\ast$ 4. This is done by creating a 2-\/D array. For each row and column, we first initialize each tile to 0. We then insert two random values anywhere across the board. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classsrc_1_1BoardT_a540ee9b96f179d4f4a4be563b6d31566}{get\+Score}} ()
+\begin{DoxyCompactList}\small\item\em This method gets called when we wish to view the score of the user. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsrc_1_1TileT}{TileT}}\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classsrc_1_1BoardT_a86f8440a95605e71a4fdce8c1510e0c5}{get\+Board}} ()
+\begin{DoxyCompactList}\small\item\em This method gets called when we wish to view the board at the moment. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsrc_1_1BoardT_a672abae45c7bf42c61af299d13b8962c}\label{classsrc_1_1BoardT_a672abae45c7bf42c61af299d13b8962c}} 
+void {\bfseries set\+Board} (\mbox{\hyperlink{classsrc_1_1TileT}{TileT}}\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} board)
+\item 
+\mbox{\Hypertarget{classsrc_1_1BoardT_a2118d9f19c369732f77ceed0b78a818d}\label{classsrc_1_1BoardT_a2118d9f19c369732f77ceed0b78a818d}} 
+void \mbox{\hyperlink{classsrc_1_1BoardT_a2118d9f19c369732f77ceed0b78a818d}{move\+Right}} ()
+\begin{DoxyCompactList}\small\item\em Simulating the event where we move the tiles right @detail We need to move each non empty tile to the right. Iterate through each row, if you see a non empty tile, shift it to the end of that row. For example if a value is in 0,0 move it to 0,3, if 0,3 is taken, move it to 0,2,if 0,2 is taken, move it to 0,1. if All of them are taken. Don\textquotesingle{}t move tile, Go to the next row. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classsrc_1_1BoardT_a61d289ff3936b73bbf8997ed641a9231}{no\+More\+Moves}} (\mbox{\hyperlink{classsrc_1_1TileT}{TileT}}\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} board)
+\begin{DoxyCompactList}\small\item\em This checks if there are any more moves possible in the game @detail The first thing we check here is if the board is completely filled. If the board has a value 0, we return false, if the board is completely filled, we check if any merges can be done. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsrc_1_1BoardT_afb1f1c997af453f29562b58223c6487e}\label{classsrc_1_1BoardT_afb1f1c997af453f29562b58223c6487e}} 
+void \mbox{\hyperlink{classsrc_1_1BoardT_afb1f1c997af453f29562b58223c6487e}{move\+Left}} ()
+\begin{DoxyCompactList}\small\item\em Simulating the event where we move the tiles left @detail We need to move each non empty tile to the left. Iterate through each row, if you see a non empty tile, shift it to the beginning of that row. For example if a value is in 0,3 move it to 0,0, if 0,0 is taken, move it to 0,1,if 0,1 is taken, move it to 0,2. if All of them are taken. Don\textquotesingle{}t move tile, Go to the next row. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsrc_1_1BoardT_a2ebaa60fb6dc07c98ab357a0c392a435}\label{classsrc_1_1BoardT_a2ebaa60fb6dc07c98ab357a0c392a435}} 
+void \mbox{\hyperlink{classsrc_1_1BoardT_a2ebaa60fb6dc07c98ab357a0c392a435}{Transpose}} ()
+\begin{DoxyCompactList}\small\item\em This method converts a board into a transposed board @detail A transposed board is a board where the rows and columns are swapped. Mathematically we know that transposing a board, moving left, and transposing again is the same as moving up. The same applies with moving down but we simulate moving right. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsrc_1_1BoardT_a640e57311c48212559fe47e61714de23}\label{classsrc_1_1BoardT_a640e57311c48212559fe47e61714de23}} 
+void \mbox{\hyperlink{classsrc_1_1BoardT_a640e57311c48212559fe47e61714de23}{move\+Up}} ()
+\begin{DoxyCompactList}\small\item\em Simulating the event where we move the tiles up @detail We need to move each non empty tile upwards Iterate through each row, if you see a non empty tile, shift it to the top of the column. For example if you see a tile in 0,0. Don\textquotesingle{}t do anything If you see a tile in 0,3, move it to 0,0. If 0,0 is taken, move it to 0,1. If 0,1 is taken move it to 0,2. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsrc_1_1BoardT_abfe6052d83766a7a46ede2471389f701}\label{classsrc_1_1BoardT_abfe6052d83766a7a46ede2471389f701}} 
+void \mbox{\hyperlink{classsrc_1_1BoardT_abfe6052d83766a7a46ede2471389f701}{move\+Down}} ()
+\begin{DoxyCompactList}\small\item\em Simulating the event where we move the tiles down @detail We need to move each non empty tile downwards Iterate through each row, if you see a non empty tile, shift it to the bottom of the column. For example if you see a tile in 0,0. Move it to 3,0 If you see a tile in 0,3, Don\textquotesingle{}t do anything. If 0,3 is taken, move it to 0,2. If 0,2 is taken move it to 0,1. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsrc_1_1BoardT_a86f8440a95605e71a4fdce8c1510e0c5}\label{classsrc_1_1BoardT_a86f8440a95605e71a4fdce8c1510e0c5}} 
+\index{src.BoardT@{src.BoardT}!getBoard@{getBoard}}
+\index{getBoard@{getBoard}!src.BoardT@{src.BoardT}}
+\doxysubsubsection{\texorpdfstring{getBoard()}{getBoard()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsrc_1_1TileT}{TileT}} \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} src.\+Board\+T.\+get\+Board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This method gets called when we wish to view the board at the moment. 
+
+\begin{DoxyReturn}{Returns}
+a board which is a 2-\/D matrix of type \mbox{\hyperlink{classsrc_1_1TileT}{TileT}} representing the board at the current moment. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classsrc_1_1BoardT_a540ee9b96f179d4f4a4be563b6d31566}\label{classsrc_1_1BoardT_a540ee9b96f179d4f4a4be563b6d31566}} 
+\index{src.BoardT@{src.BoardT}!getScore@{getScore}}
+\index{getScore@{getScore}!src.BoardT@{src.BoardT}}
+\doxysubsubsection{\texorpdfstring{getScore()}{getScore()}}
+{\footnotesize\ttfamily int src.\+Board\+T.\+get\+Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This method gets called when we wish to view the score of the user. 
+
+\begin{DoxyReturn}{Returns}
+a value of type int representing the score of the user. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classsrc_1_1BoardT_a61d289ff3936b73bbf8997ed641a9231}\label{classsrc_1_1BoardT_a61d289ff3936b73bbf8997ed641a9231}} 
+\index{src.BoardT@{src.BoardT}!noMoreMoves@{noMoreMoves}}
+\index{noMoreMoves@{noMoreMoves}!src.BoardT@{src.BoardT}}
+\doxysubsubsection{\texorpdfstring{noMoreMoves()}{noMoreMoves()}}
+{\footnotesize\ttfamily boolean src.\+Board\+T.\+no\+More\+Moves (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsrc_1_1TileT}{TileT}}}]{board\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+This checks if there are any more moves possible in the game @detail The first thing we check here is if the board is completely filled. If the board has a value 0, we return false, if the board is completely filled, we check if any merges can be done. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em board} & which is a 2-\/D list of type \mbox{\hyperlink{classsrc_1_1TileT}{TileT}} representing the board \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a boolean to determine whether there are any moves left, hence, if the game is over 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/Board\+T.\+java\end{DoxyCompactItemize}

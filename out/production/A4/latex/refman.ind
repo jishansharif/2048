@@ -1,0 +1,38 @@
+\begin{theindex}
+
+  \item {getBoard}
+    \subitem {src.BoardT}, \hyperpage{8}
+  \item {getScore}
+    \subitem {src.BoardT}, \hyperpage{8}
+  \item {getValue}
+    \subitem {src.TileT}, \hyperpage{9}
+
+  \indexspace
+
+  \item {noMoreMoves}
+    \subitem {src.BoardT}, \hyperpage{8}
+
+  \indexspace
+
+  \item {setValue}
+    \subitem {src.TileT}, \hyperpage{10}
+  \item {src}, \hyperpage{5}
+  \item {src.BoardT}, \hyperpage{7}
+    \subitem {getBoard}, \hyperpage{8}
+    \subitem {getScore}, \hyperpage{8}
+    \subitem {noMoreMoves}, \hyperpage{8}
+  \item {src.TileT}, \hyperpage{9}
+    \subitem {getValue}, \hyperpage{9}
+    \subitem {setValue}, \hyperpage{10}
+    \subitem {TileT}, \hyperpage{9}
+    \subitem {toString}, \hyperpage{10}
+  \item {src.View}, \hyperpage{10}
+
+  \indexspace
+
+  \item {TileT}
+    \subitem {src.TileT}, \hyperpage{9}
+  \item {toString}
+    \subitem {src.TileT}, \hyperpage{10}
+
+\end{theindex}
